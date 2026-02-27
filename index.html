@@ -1,951 +1,126 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glow Lab • Clínica de Alta Performance Estética</title>
-    
-    <!-- Fontes Premium -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- Ícones e Estilos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <meta name="description" content="Glow Lab - Clínica de Estética de Alta Performance">
+    <title>Glow Lab | Clínica de Estética</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Cursor Personalizado -->
-    <div class="custom-cursor"></div>
-    <div class="custom-cursor-follower"></div>
-
-    <!-- Overlay de Transição -->
-    <div class="transition-overlay"></div>
-
-    <!-- Header com Efeito Glass -->
-    <header class="header">
-        <div class="header-container">
-            <div class="logo-wrapper">
-                <a href="#home" class="logo-link">
-                    <span class="logo-text">glow lab</span>
-                    <span class="logo-dot"></span>
-                </a>
-            </div>
-
-            <nav class="nav-wrapper">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#home" class="nav-link" data-text="Início">Início</a></li>
-                    <li class="nav-item"><a href="#procedimentos" class="nav-link" data-text="Procedimentos">Procedimentos</a></li>
-                    <li class="nav-item"><a href="#cosmeticos" class="nav-link" data-text="Cosméticos">Cosméticos</a></li>
-                    <li class="nav-item"><a href="#resultados" class="nav-link" data-text="Resultados">Resultados</a></li>
-                    <li class="nav-item"><a href="#agendamento" class="nav-link" data-text="Agendamento">Agendamento</a></li>
-                    <li class="nav-item"><a href="#duvidas" class="nav-link" data-text="Dúvidas">Dúvidas</a></li>
-                </ul>
-            </nav>
-
-            <div class="header-actions">
-                <a href="#" class="icon-link search-trigger">
-                    <i class="fas fa-search"></i>
-                </a>
-                <a href="#" class="icon-link cart-trigger">
-                    <i class="fas fa-shopping-bag"></i>
-                    <span class="cart-count">0</span>
-                </a>
-                <button class="menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>Glow Lab</h1>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#procedimentos">Procedimentos</a></li>
+                <li><a href="#cosmeticos">Cosméticos</a></li>
+                <li><a href="#resultados">Resultados</a></li>
+                <li><a href="#agendamento">Agendamento</a></li>
+                <li><a href="#duvidas">Dúvidas</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Hero Section com Parallax -->
-    <section id="home" class="hero">
-        <div class="hero-media">
-            <div class="hero-video-wrapper">
-                <video class="hero-video" autoplay muted loop playsinline>
-                    <source src="https://player.vimeo.com/progressive_redirect/playback/877669257/rendition/1080p/file.mp4?loc=external&log_user=0&signature=7d1f9b1b1b1b1b1b1b1b1b1b1b1b1b1b" type="video/mp4">
-                </video>
-            </div>
-            <div class="hero-overlay"></div>
-        </div>
-
-        <div class="hero-content">
-            <div class="hero-badge animate-fade-up">
-                <span>✦ excelência em estética ✦</span>
-            </div>
-            
-            <h1 class="hero-title animate-fade-up">
-                <span class="line-reveal">Redescubra sua</span>
-                <span class="line-reveal gradient-text">melhor versão</span>
-            </h1>
-            
-            <p class="hero-description animate-fade-up">
-                Onde a ciência de ponta encontra a arte da beleza natural. 
-                Resultados que transcendem o espelho.
-            </p>
-
-            <div class="hero-cta animate-fade-up">
-                <a href="#agendamento" class="btn btn-primary">
-                    <span>Iniciar Jornada</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-                <a href="#procedimentos" class="btn btn-outline">
-                    <span>Explorar Tratamentos</span>
-                </a>
-            </div>
-
-            <div class="hero-stats animate-fade-up">
-                <div class="stat-item">
-                    <span class="stat-number" data-count="15000">0</span>
-                    <span class="stat-label">procedimentos realizados</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-count="98">0</span>
-                    <span class="stat-label">% de satisfação</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-count="15">0</span>
-                    <span class="stat-label">anos de excelência</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="hero-scroll">
-            <span>Scroll</span>
-            <div class="scroll-line"></div>
-        </div>
-
-        <div class="hero-social">
-            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
-        </div>
-    </section>
-
-    <!-- About Section com Reveal -->
-    <section class="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-images">
-                    <div class="image-stack">
-                        <div class="image-item image-1 reveal-img">
-                            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1760&q=80" alt="Clínica Glow Lab">
-                        </div>
-                        <div class="image-item image-2 reveal-img">
-                            <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1791&q=80" alt="Procedimento Estético">
-                        </div>
-                        <div class="image-item image-3 reveal-img">
-                            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80" alt="Tecnologia Avançada">
-                        </div>
-                    </div>
-                    
-                    <div class="experience-badge">
-                        <span class="years">15+</span>
-                        <span class="text">anos de<br>excelência</span>
-                    </div>
-                </div>
-
-                <div class="about-content reveal-text">
-                    <span class="section-subtitle">nossa essência</span>
-                    <h2 class="section-title">Nós somos a <span class="gradient-text">Glow Lab</span></h2>
-                    
-                    <p class="about-paragraph">
-                        Mais do que uma clínica ou uma marca de cosméticos, somos um ecossistema dedicado ao bem-estar e à autoestima. Nascemos da crença de que a beleza não é um padrão a ser alcançado, mas uma identidade a ser celebrada.
-                    </p>
-                    
-                    <p class="about-paragraph">
-                        Nossa missão é unir a ciência avançada da cosmetologia à precisão dos procedimentos estéticos para entregar resultados que aparecem no espelho e refletem na alma.
-                    </p>
-
-                    <div class="about-features">
-                        <div class="feature-box">
-                            <i class="fas fa-microscope"></i>
-                            <h4>Tecnologia de Ponta</h4>
-                            <p>Equipamentos importados de última geração</p>
-                        </div>
-                        <div class="feature-box">
-                            <i class="fas fa-award"></i>
-                            <h4>Equipe Especializada</h4>
-                            <p>Profissionais renomados internacionalmente</p>
-                        </div>
-                        <div class="feature-box">
-                            <i class="fas fa-heart"></i>
-                            <h4>Resultados Garantidos</h4>
-                            <p>Satisfação comprovada por nossos clientes</p>
-                        </div>
-                    </div>
-
-                    <a href="#procedimentos" class="btn btn-primary">
-                        <span>Conheça nossa história</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
+    <!-- Seção Sobre -->
+    <section id="sobre">
+        <div class="sobre-conteudo">
+            <img src="imagem-clinica.jpg" alt="Imagem da Clínica">
+            <div class="texto-sobre">
+                <h2>Sobre Nós</h2>
+                <p>Nós somos a Glow Lab. Mais do que uma clínica ou uma marca de cosméticos, somos um ecossistema dedicado ao bem-estar e à autoestima. Nascemos da crença de que a beleza não é um padrão a ser alcançado, mas uma identidade a ser celebrada. Nossa missão é unir a ciência avançada da cosmetologia à precisão dos procedimentos estéticos para entregar resultados que aparecem no espelho e refletem na alma.</p>
             </div>
         </div>
     </section>
 
-    <!-- Procedimentos Section -->
-    <section id="procedimentos" class="procedimentos">
-        <div class="container">
-            <div class="section-header text-center">
-                <span class="section-subtitle">tratamentos exclusivos</span>
-                <h2 class="section-title">Procedimentos de <span class="gradient-text">Alta Performance</span></h2>
-                <p class="section-description">
-                    Tecnologia avançada e técnicas inovadoras para resultados que transformam
-                </p>
+    <!-- Seção Procedimentos -->
+    <section id="procedimentos">
+        <h2>Procedimentos</h2>
+        <div class="procedimentos-container">
+            <div class="procedimento">
+                <img src="botox.jpg" alt="Botox">
+                <h3>Botox</h3>
+                <p>Procedimento de rejuvenescimento facial com resultados naturais.</p>
             </div>
-
-            <!-- Filtros Categoria -->
-            <div class="procedimentos-filters">
-                <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="facial">Harmonização Facial</button>
-                <button class="filter-btn" data-filter="corporal">Body Design</button>
-                <button class="filter-btn" data-filter="laser">Tecnologia Laser</button>
-                <button class="filter-btn" data-filter="cirurgico">Procedimentos Cirúrgicos</button>
+            <div class="procedimento">
+                <img src="limpeza_pele.jpg" alt="Limpeza de Pele">
+                <h3>Limpeza de Pele</h3>
+                <p>Tratamento para renovação e revitalização da pele.</p>
             </div>
-
-            <!-- Grid Procedimentos -->
-            <div class="procedimentos-grid">
-                <!-- Botox -->
-                <div class="procedimento-card" data-category="facial">
-                    <div class="card-media">
-                        <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80" alt="Botox">
-                        <div class="card-overlay">
-                            <span class="card-tag">✦ Facial</span>
-                            <span class="card-time"><i class="far fa-clock"></i> 30 min</span>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Toxina Botulínica</h3>
-                        <p>Suavização de linhas de expressão com resultado natural e duradouro</p>
-                        <ul class="card-benefits">
-                            <li><i class="fas fa-check"></i> Resultado em 7 dias</li>
-                            <li><i class="fas fa-check"></i> Duração 4-6 meses</li>
-                            <li><i class="fas fa-check"></i> Procedimento rápido</li>
-                        </ul>
-                        <a href="#" class="card-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <!-- Limpeza de Pele -->
-                <div class="procedimento-card" data-category="facial">
-                    <div class="card-media">
-                        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Limpeza de Pele">
-                        <div class="card-overlay">
-                            <span class="card-tag">✦ Facial</span>
-                            <span class="card-time"><i class="far fa-clock"></i> 60 min</span>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Limpeza de Pele Avançada</h3>
-                        <p>Extração profunda com tecnologia de alta frequência e revitalização</p>
-                        <ul class="card-benefits">
-                            <li><i class="fas fa-check"></i> Limpeza profunda</li>
-                            <li><i class="fas fa-check"></i> Alta frequência</li>
-                            <li><i class="fas fa-check"></i> Máscara personalizada</li>
-                        </ul>
-                        <a href="#" class="card-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <!-- Preenchimento Labial -->
-                <div class="procedimento-card" data-category="facial">
-                    <div class="card-media">
-                        <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80" alt="Preenchimento Labial">
-                        <div class="card-overlay">
-                            <span class="card-tag">✦ Facial</span>
-                            <span class="card-time"><i class="far fa-clock"></i> 45 min</span>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Design de Lábios</h3>
-                        <p>Realce e definição com técnica avançada de preenchimento</p>
-                        <ul class="card-benefits">
-                            <li><i class="fas fa-check"></i> Ácido hialurônico</li>
-                            <li><i class="fas fa-check"></i> Resultado natural</li>
-                            <li><i class="fas fa-check"></i> Hidratação profunda</li>
-                        </ul>
-                        <a href="#" class="card-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <!-- Micropigmentação -->
-                <div class="procedimento-card" data-category="facial">
-                    <div class="card-media">
-                        <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Micropigmentação">
-                        <div class="card-overlay">
-                            <span class="card-tag">✦ Facial</span>
-                            <span class="card-time"><i class="far fa-clock"></i> 2h</span>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Micropigmentação Premium</h3>
-                        <p>Técnica avançada para sobrancelhas e lábios com pigmentos especiais</p>
-                        <ul class="card-benefits">
-                            <li><i class="fas fa-check"></i> Efeito fio a fio</li>
-                            <li><i class="fas fa-check"></i> Pigmentos hipoalergênicos</li>
-                            <li><i class="fas fa-check"></i> Duração prolongada</li>
-                        </ul>
-                        <a href="#" class="card-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <!-- Laser -->
-                <div class="procedimento-card" data-category="laser">
-                    <div class="card-media">
-                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Laser">
-                        <div class="card-overlay">
-                            <span class="card-tag">✦ Laser</span>
-                            <span class="card-time"><i class="far fa-clock"></i> Variável</span>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Tecnologia Laser</h3>
-                        <p>Tratamentos avançados para depilação, manchas e rejuvenescimento</p>
-                        <ul class="card-benefits">
-                            <li><i class="fas fa-check"></i> Laser de diodo</li>
-                            <li><i class="fas fa-check"></i> Indolor e seguro</li>
-                            <li><i class="fas fa-check"></i> Resultados definitivos</li>
-                        </ul>
-                        <a href="#" class="card-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <!-- Rinoplastia -->
-                <div class="procedimento-card" data-category="cirurgico">
-                    <div class="card-media">
-                        <img src="https://images.unsplash.com/photo-1512291314307-c6d4e7880c2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80" alt="Rinoplastia">
-                        <div class="card-overlay">
-                            <span class="card-tag">✦ Cirúrgico</span>
-                            <span class="card-time"><i class="far fa-clock"></i> 2-3h</span>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Rinoplastia Estrutural</h3>
-                        <p>Harmonização facial com técnicas minimamente invasivas</p>
-                        <ul class="card-benefits">
-                            <li><i class="fas fa-check"></i> Técnica closed</li>
-                            <li><i class="fas fa-check"></i> Recuperação rápida</li>
-                            <li><i class="fas fa-check"></i> Resultado natural</li>
-                        </ul>
-                        <a href="#" class="card-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <!-- Prótese de Silicone -->
-                <div class="procedimento-card" data-category="cirurgico">
-                    <div class="card-media">
-                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80" alt="Silicone">
-                        <div class="card-overlay">
-                            <span class="card-tag">✦ Cirúrgico</span>
-                            <span class="card-time"><i class="far fa-clock"></i> 2h</span>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Prótese de Silicone</h3>
-                        <p>Implantes de alta qualidade para harmonização corporal</p>
-                        <ul class="card-benefits">
-                            <li><i class="fas fa-check"></i> Próteses importadas</li>
-                            <li><i class="fas fa-check"></i> Técnica moderna</li>
-                            <li><i class="fas fa-check"></i> Resultado natural</li>
-                        </ul>
-                        <a href="#" class="card-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <!-- Lipoaspiração -->
-                <div class="procedimento-card" data-category="corporal">
-                    <div class="card-media">
-                        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80" alt="Lipoaspiração">
-                        <div class="card-overlay">
-                            <span class="card-tag">✦ Corporal</span>
-                            <span class="card-time"><i class="far fa-clock"></i> 3-4h</span>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Lipoaspiração HD</h3>
-                        <p>Modelagem corporal de alta definição com tecnologia a laser</p>
-                        <ul class="card-benefits">
-                            <li><i class="fas fa-check"></i> Laser lipo</li>
-                            <li><i class="fas fa-check"></i> Definição muscular</li>
-                            <li><i class="fas fa-check"></i> Recuperação acelerada</li>
-                        </ul>
-                        <a href="#" class="card-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
+            <div class="procedimento">
+                <img src="micropigmentacao.jpg" alt="Micropigmentação">
+                <h3>Micropigmentação</h3>
+                <p>Técnicas avançadas para sobrancelhas, lábios e olhos.</p>
             </div>
+            <!-- Adicionar mais procedimentos conforme necessário -->
+        </div>
+    </section>
 
-            <div class="procedimentos-cta">
-                <a href="#" class="btn btn-outline">Ver todos os procedimentos <i class="fas fa-arrow-right"></i></a>
+    <!-- Seção Cosméticos -->
+    <section id="cosmeticos">
+        <h2>Cosméticos e Produtos Pós-Operatórios</h2>
+        <p>Oferecemos uma linha exclusiva de cosméticos para cuidados com a pele, vitaminas e cápsulas para potencializar os resultados.</p>
+        <div class="produtos">
+            <div class="produto">
+                <img src="produto1.jpg" alt="Produto 1">
+                <p>Cosmético 1</p>
+            </div>
+            <div class="produto">
+                <img src="produto2.jpg" alt="Produto 2">
+                <p>Cosmético 2</p>
+            </div>
+            <!-- Adicionar mais produtos conforme necessário -->
+        </div>
+    </section>
+
+    <!-- Seção Resultados -->
+    <section id="resultados">
+        <h2>Resultados</h2>
+        <div class="resultados">
+            <div class="resultado">
+                <img src="resultado1.jpg" alt="Resultado 1">
+                <p>Antes e depois do procedimento.</p>
+            </div>
+            <div class="resultado">
+                <img src="resultado2.jpg" alt="Resultado 2">
+                <p>Transformação incrível dos nossos clientes!</p>
             </div>
         </div>
     </section>
 
-    <!-- Cosméticos Section -->
-    <section id="cosmeticos" class="cosmeticos">
-        <div class="container">
-            <div class="section-header text-center">
-                <span class="section-subtitle">nossa linha exclusiva</span>
-                <h2 class="section-title">Cosméticos & <span class="gradient-text">Pós-Operatório</span></h2>
-                <p class="section-description">
-                    Desenvolvidos para potencializar resultados e acelerar sua recuperação
-                </p>
-            </div>
-
-            <div class="cosmeticos-grid">
-                <!-- Vitaminas -->
-                <div class="cosmetico-card">
-                    <div class="card-badge">Novo</div>
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Vitaminas">
-                        <div class="image-overlay">
-                            <button class="quick-view"><i class="fas fa-eye"></i> Rápida</button>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Complexo Vitamínico Glow</h3>
-                        <p>Suplemento premium para pele, cabelos e unhas</p>
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(156)</span>
-                        </div>
-                        <div class="product-price">
-                            <span class="current-price">R$ 189,90</span>
-                            <span class="old-price">R$ 249,90</span>
-                        </div>
-                        <button class="btn-add-cart">
-                            <i class="fas fa-shopping-bag"></i>
-                            Adicionar
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Cápsulas Pós -->
-                <div class="cosmetico-card">
-                    <div class="card-badge best-seller">Mais Vendido</div>
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Cápsulas Pós-Operatório">
-                        <div class="image-overlay">
-                            <button class="quick-view"><i class="fas fa-eye"></i> Rápida</button>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Kit Recuperação Pós</h3>
-                        <p>Suplementação avançada para pós-operatório</p>
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(89)</span>
-                        </div>
-                        <div class="product-price">
-                            <span class="current-price">R$ 239,90</span>
-                        </div>
-                        <button class="btn-add-cart">
-                            <i class="fas fa-shopping-bag"></i>
-                            Adicionar
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Cremes Regeneradores -->
-                <div class="cosmetico-card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1576426863848-c21f53c60b19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Cremes Regeneradores">
-                        <div class="image-overlay">
-                            <button class="quick-view"><i class="fas fa-eye"></i> Rápida</button>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Creme Regenerador Noturno</h3>
-                        <p>Ação intensiva enquanto você dorme</p>
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(234)</span>
-                        </div>
-                        <div class="product-price">
-                            <span class="current-price">R$ 279,90</span>
-                            <span class="old-price">R$ 349,90</span>
-                        </div>
-                        <button class="btn-add-cart">
-                            <i class="fas fa-shopping-bag"></i>
-                            Adicionar
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Protetor Solar -->
-                <div class="cosmetico-card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80" alt="Protetor Solar">
-                        <div class="image-overlay">
-                            <button class="quick-view"><i class="fas fa-eye"></i> Rápida</button>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Protetor Solar Medicamentoso</h3>
-                        <p>FPS 70 com ativos regeneradores</p>
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(312)</span>
-                        </div>
-                        <div class="product-price">
-                            <span class="current-price">R$ 159,90</span>
-                        </div>
-                        <button class="btn-add-cart">
-                            <i class="fas fa-shopping-bag"></i>
-                            Adicionar
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cosmeticos-cta">
-                <a href="#" class="btn btn-primary">Conhecer linha completa <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
+    <!-- Seção Agendamento -->
+    <section id="agendamento">
+        <h2>Agendamento</h2>
+        <p>Agende seu atendimento com a gente!</p>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+            <label for="horario">Horário:</label>
+            <input type="time" id="horario" name="horario" required>
+            <button type="submit">Agendar</button>
+        </form>
     </section>
 
-    <!-- Resultados Section com Galeria -->
-    <section id="resultados" class="resultados">
-        <div class="container">
-            <div class="section-header text-center">
-                <span class="section-subtitle">resultados reais</span>
-                <h2 class="section-title">Transformações que <span class="gradient-text">inspiram</span></h2>
-                <p class="section-description">
-                    Histórias reais de clientes que confiaram em nossa expertise
-                </p>
-            </div>
-
-            <!-- Swiper Galeria -->
-            <div class="swiper resultados-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="resultado-card">
-                            <div class="before-after">
-                                <div class="before">
-                                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80" alt="Antes">
-                                    <span>Antes</span>
-                                </div>
-                                <div class="after">
-                                    <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80" alt="Depois">
-                                    <span>Depois</span>
-                                </div>
-                            </div>
-                            <div class="resultado-info">
-                                <h4>Maria A. • 34 anos</h4>
-                                <p>Procedimento: Harmonização Facial</p>
-                                <div class="testimonial">
-                                    <i class="fas fa-quote-left"></i>
-                                    <p>Mudei por completo minha autoestima. Resultado superou minhas expectativas!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="resultado-card">
-                            <div class="before-after">
-                                <div class="before">
-                                    <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80" alt="Antes">
-                                    <span>Antes</span>
-                                </div>
-                                <div class="after">
-                                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80" alt="Depois">
-                                    <span>Depois</span>
-                                </div>
-                            </div>
-                            <div class="resultado-info">
-                                <h4>Camila S. • 28 anos</h4>
-                                <p>Procedimento: Design de Lábios</p>
-                                <div class="testimonial">
-                                    <i class="fas fa-quote-left"></i>
-                                    <p>Equipe incrível, atendimento impecável. Meus lábios ficaram perfeitos!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="resultado-card">
-                            <div class="before-after">
-                                <div class="before">
-                                    <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80" alt="Antes">
-                                    <span>Antes</span>
-                                </div>
-                                <div class="after">
-                                    <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80" alt="Depois">
-                                    <span>Depois</span>
-                                </div>
-                            </div>
-                            <div class="resultado-info">
-                                <h4>Juliana R. • 42 anos</h4>
-                                <p>Procedimento: Toxina Botulínica</p>
-                                <div class="testimonial">
-                                    <i class="fas fa-quote-left"></i>
-                                    <p>Resultado super natural, ninguém percebe que fiz, só que estou mais bonita!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-        </div>
+    <!-- Seção Dúvidas -->
+    <section id="duvidas">
+        <h2>Dúvidas</h2>
+        <form>
+            <label for="duvida">Escreva sua dúvida:</label>
+            <textarea id="duvida" name="duvida" required></textarea>
+            <button type="submit">Enviar Dúvida</button>
+        </form>
     </section>
 
-    <!-- Agendamento Section -->
-    <section id="agendamento" class="agendamento">
-        <div class="container">
-            <div class="agendamento-wrapper">
-                <div class="agendamento-content">
-                    <span class="section-subtitle">agende sua consulta</span>
-                    <h2 class="section-title">Dê o primeiro passo para sua <span class="gradient-text">transformação</span></h2>
-                    <p class="agendamento-description">
-                        Nossa equipe está pronta para receber você em um ambiente acolhedor e exclusivo, onde cada detalhe é pensado para sua satisfação e bem-estar.
-                    </p>
-
-                    <div class="agendamento-info">
-                        <div class="info-item">
-                            <i class="fas fa-phone-alt"></i>
-                            <div>
-                                <h4>Telefone</h4>
-                                <p>(11) 99999-9999</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fab fa-whatsapp"></i>
-                            <div>
-                                <h4>WhatsApp</h4>
-                                <p>(11) 99999-9999</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>E-mail</h4>
-                                <p>contato@glowlab.com.br</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Endereço</h4>
-                                <p>Av. Paulista, 1000 - São Paulo/SP</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="agendamento-hours">
-                        <h4>Horário de Funcionamento</h4>
-                        <ul>
-                            <li><span>Segunda a Sexta:</span> 9h às 20h</li>
-                            <li><span>Sábado:</span> 9h às 15h</li>
-                            <li><span>Domingo:</span> Fechado</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="agendamento-form-wrapper">
-                    <form class="agendamento-form">
-                        <h3>Formulário de Agendamento</h3>
-                        
-                        <div class="form-group">
-                            <input type="text" id="nome" required>
-                            <label for="nome">Nome completo</label>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="email" id="email" required>
-                                <label for="email">E-mail</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" id="telefone" required>
-                                <label for="telefone">Telefone</label>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="date" id="data" required>
-                                <label for="data">Data</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="time" id="horario" required>
-                                <label for="horario">Horário</label>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <select id="procedimento" required>
-                                <option value="" disabled selected></option>
-                                <option value="botox">Toxina Botulínica</option>
-                                <option value="limpeza">Limpeza de Pele Avançada</option>
-                                <option value="labial">Design de Lábios</option>
-                                <option value="micropigmentacao">Micropigmentação</option>
-                                <option value="laser">Tecnologia Laser</option>
-                                <option value="rinoplastia">Rinoplastia</option>
-                                <option value="silicone">Prótese de Silicone</option>
-                                <option value="lipo">Lipoaspiração HD</option>
-                            </select>
-                            <label for="procedimento">Procedimento desejado</label>
-                        </div>
-
-                        <div class="form-group">
-                            <textarea id="mensagem" rows="4"></textarea>
-                            <label for="mensagem">Mensagem (opcional)</label>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn-full">
-                            <span>Solicitar Agendamento</span>
-                            <i class="fas fa-calendar-check"></i>
-                        </button>
-
-                        <p class="form-disclaimer">
-                            Ao enviar, você concorda com nossa Política de Privacidade
-                        </p>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Dúvidas Section -->
-    <section id="duvidas" class="duvidas">
-        <div class="container">
-            <div class="section-header text-center">
-                <span class="section-subtitle">perguntas frequentes</span>
-                <h2 class="section-title">Esclareça suas <span class="gradient-text">dúvidas</span></h2>
-                <p class="section-description">
-                    Tudo o que você precisa saber antes de iniciar sua jornada conosco
-                </p>
-            </div>
-
-            <div class="duvidas-grid">
-                <div class="faq-container">
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>Os procedimentos são dolorosos?</h3>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Trabalhamos com técnicas avançadas de anestesia e protocolos de conforto. A maioria dos procedimentos é indolor ou causa mínimo desconforto, controlado com anestésicos locais e técnicas modernas.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>Qual o tempo de recuperação?</h3>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>O tempo varia conforme o procedimento. Procedimentos minimamente invasivos têm recuperação imediata ou em poucos dias. Cirurgias podem necessitar de 1 a 2 semanas. Nossa equipe fornece todo suporte pós-operatório.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>Os resultados são garantidos?</h3>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Sim! Utilizamos tecnologia de ponta e produtos de altíssima qualidade. Nossa taxa de satisfação é de 98%, com resultados consistentes e duradouros. Cada caso é avaliado individualmente para garantir o melhor resultado.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>Preciso de autorização médica?</h3>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Para procedimentos cirúrgicos, sim. Realizamos uma avaliação completa com nossa equipe médica para garantir que você está apto ao procedimento. Para tratamentos não invasivos, apenas uma avaliação prévia.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>Como funciona o pré-operatório?</h3>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Oferecemos consulta detalhada, exames laboratoriais, avaliação cardiológica quando necessário, e todas as orientações prévias. Nossa equipe acompanha cada etapa para sua segurança.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>Vocês parcelam os procedimentos?</h3>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Sim! Trabalhamos com diversas formas de pagamento, incluindo parcelamento em até 12x no cartão, convênios e financiamentos especiais para procedimentos estéticos.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="duvidas-contact">
-                    <div class="contact-card">
-                        <i class="fas fa-headset"></i>
-                        <h3>Ainda tem dúvidas?</h3>
-                        <p>Nossa equipe está disponível para responder todas as suas perguntas</p>
-                        
-                        <form class="contact-form">
-                            <div class="form-group">
-                                <input type="text" placeholder="Seu nome" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" placeholder="Seu e-mail" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea placeholder="Sua dúvida" rows="3" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-full">
-                                Enviar mensagem
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Instagram Feed -->
-    <section class="instagram-feed">
-        <div class="instagram-header">
-            <i class="fab fa-instagram"></i>
-            <h3>Siga nosso instagram</h3>
-            <a href="#" target="_blank">@glowlab.estetica</a>
-        </div>
-        <div class="instagram-grid">
-            <a href="#" class="instagram-item">
-                <img src="https://images.unsplash.com/photo-1512290925602-fa7e2e1c9f0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Instagram 1">
-                <div class="instagram-overlay">
-                    <i class="fab fa-instagram"></i>
-                </div>
-            </a>
-            <a href="#" class="instagram-item">
-                <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Instagram 2">
-                <div class="instagram-overlay">
-                    <i class="fab fa-instagram"></i>
-                </div>
-            </a>
-            <a href="#" class="instagram-item">
-                <img src="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Instagram 3">
-                <div class="instagram-overlay">
-                    <i class="fab fa-instagram"></i>
-                </div>
-            </a>
-            <a href="#" class="instagram-item">
-                <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Instagram 4">
-                <div class="instagram-overlay">
-                    <i class="fab fa-instagram"></i>
-                </div>
-            </a>
-            <a href="#" class="instagram-item">
-                <img src="https://images.unsplash.com/photo-1512290925602-fa7e2e1c9f0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Instagram 5">
-                <div class="instagram-overlay">
-                    <i class="fab fa-instagram"></i>
-                </div>
-            </a>
-            <a href="#" class="instagram-item">
-                <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Instagram 6">
-                <div class="instagram-overlay">
-                    <i class="fab fa-instagram"></i>
-                </div>
-            </a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <div class="footer-logo">
-                        <h3>glow lab</h3>
-                        <p>estética de alta performance</p>
-                    </div>
-                    <p class="footer-about">
-                        Excelência em procedimentos estéticos com tecnologia avançada e resultados garantidos.
-                    </p>
-                    <div class="footer-social">
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Links Rápidos</h4>
-                    <ul class="footer-links">
-                        <li><a href="#home">Início</a></li>
-                        <li><a href="#procedimentos">Procedimentos</a></li>
-                        <li><a href="#cosmeticos">Cosméticos</a></li>
-                        <li><a href="#resultados">Resultados</a></li>
-                        <li><a href="#agendamento">Agendamento</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Procedimentos</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Harmonização Facial</a></li>
-                        <li><a href="#">Body Design</a></li>
-                        <li><a href="#">Tecnologia Laser</a></li>
-                        <li><a href="#">Procedimentos Cirúrgicos</a></li>
-                        <li><a href="#">Tratamentos Faciais</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Contato</h4>
-                    <ul class="footer-contact">
-                        <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
-                        <li><i class="fab fa-whatsapp"></i> (11) 99999-9999</li>
-                        <li><i class="fas fa-envelope"></i> contato@glowlab.com.br</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Av. Paulista, 1000 - São Paulo/SP</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2024 Glow Lab. Todos os direitos reservados.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Política de Privacidade</a>
-                    <a href="#">Termos de Uso</a>
-                    <a href="#">Cookies</a>
-                </div>
-            </div>
-        </div>
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Glow Lab | Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
