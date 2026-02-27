@@ -25,44 +25,51 @@
         </nav>
     </header>
 
+    <!-- Seção de Banner -->
+    <section class="banner">
+        <div class="banner-texto">
+            <h2>Transforme sua beleza com a tecnologia e o cuidado que você merece.</h2>
+            <p>Na Glow Lab, oferecemos procedimentos estéticos de alta performance e resultados garantidos.</p>
+            <a href="#agendamento" class="btn-agendar">Agende Agora</a>
+        </div>
+    </section>
+
     <!-- Seção Sobre -->
     <section id="sobre">
         <div class="sobre-conteudo">
             <img src="imagem-clinica.jpg" alt="Imagem da Clínica">
             <div class="texto-sobre">
                 <h2>Sobre Nós</h2>
-                <p>Nós somos a Glow Lab. Mais do que uma clínica ou uma marca de cosméticos, somos um ecossistema dedicado ao bem-estar e à autoestima. Nascemos da crença de que a beleza não é um padrão a ser alcançado, mas uma identidade a ser celebrada. Nossa missão é unir a ciência avançada da cosmetologia à precisão dos procedimentos estéticos para entregar resultados que aparecem no espelho e refletem na alma.</p>
+                <p>Mais do que uma clínica, a Glow Lab é um ecossistema dedicado ao bem-estar e à autoestima. Nossa missão é unir ciência e arte para realçar sua beleza única com resultados que vão além das expectativas.</p>
             </div>
         </div>
     </section>
 
-    <!-- Seção Procedimentos -->
-    <section id="procedimentos">
+    <!-- Seção de Procedimentos -->
+    <section id="procedimentos" class="procedimentos">
         <h2>Procedimentos</h2>
         <div class="procedimentos-container">
             <div class="procedimento">
                 <img src="botox.jpg" alt="Botox">
                 <h3>Botox</h3>
-                <p>Procedimento de rejuvenescimento facial com resultados naturais.</p>
+                <p>Rejuvenescimento facial com resultados naturais e duradouros.</p>
             </div>
             <div class="procedimento">
                 <img src="limpeza_pele.jpg" alt="Limpeza de Pele">
                 <h3>Limpeza de Pele</h3>
-                <p>Tratamento para renovação e revitalização da pele.</p>
+                <p>Revitalize sua pele com um tratamento profundo e hidratante.</p>
             </div>
             <div class="procedimento">
                 <img src="micropigmentacao.jpg" alt="Micropigmentação">
                 <h3>Micropigmentação</h3>
-                <p>Técnicas avançadas para sobrancelhas, lábios e olhos.</p>
+                <p>Técnicas avançadas para realçar sua beleza de forma natural.</p>
             </div>
-            <!-- Adicionar mais procedimentos conforme necessário -->
         </div>
     </section>
 
     <!-- Seção Cosméticos -->
-    <section id="cosmeticos">
+    <section id="cosmeticos" class="cosmeticos">
         <h2>Cosméticos e Produtos Pós-Operatórios</h2>
-        <p>Oferecemos uma linha exclusiva de cosméticos para cuidados com a pele, vitaminas e cápsulas para potencializar os resultados.</p>
         <div class="produtos">
             <div class="produto">
                 <img src="produto1.jpg" alt="Produto 1">
@@ -72,14 +79,13 @@
                 <img src="produto2.jpg" alt="Produto 2">
                 <p>Cosmético 2</p>
             </div>
-            <!-- Adicionar mais produtos conforme necessário -->
         </div>
     </section>
 
     <!-- Seção Resultados -->
-    <section id="resultados">
+    <section id="resultados" class="resultados">
         <h2>Resultados</h2>
-        <div class="resultados">
+        <div class="resultados-container">
             <div class="resultado">
                 <img src="resultado1.jpg" alt="Resultado 1">
                 <p>Antes e depois do procedimento.</p>
@@ -92,27 +98,35 @@
     </section>
 
     <!-- Seção Agendamento -->
-    <section id="agendamento">
+    <section id="agendamento" class="agendamento">
         <h2>Agendamento</h2>
-        <p>Agende seu atendimento com a gente!</p>
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            <label for="data">Data:</label>
-            <input type="date" id="data" name="data" required>
-            <label for="horario">Horário:</label>
-            <input type="time" id="horario" name="horario" required>
-            <button type="submit">Agendar</button>
+        <p>Agende seu atendimento com a gente agora mesmo!</p>
+        <form id="form-agendamento">
+            <div class="input-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="input-group">
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+            <div class="input-group">
+                <label for="horario">Horário:</label>
+                <input type="time" id="horario" name="horario" required>
+            </div>
+            <button type="submit" class="btn-agendar">Agendar</button>
         </form>
     </section>
 
     <!-- Seção Dúvidas -->
-    <section id="duvidas">
+    <section id="duvidas" class="duvidas">
         <h2>Dúvidas</h2>
-        <form>
-            <label for="duvida">Escreva sua dúvida:</label>
-            <textarea id="duvida" name="duvida" required></textarea>
-            <button type="submit">Enviar Dúvida</button>
+        <form id="form-duvidas">
+            <div class="input-group">
+                <label for="duvida">Escreva sua dúvida:</label>
+                <textarea id="duvida" name="duvida" required></textarea>
+            </div>
+            <button type="submit" class="btn-agendar">Enviar Dúvida</button>
         </form>
     </section>
 
